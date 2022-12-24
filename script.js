@@ -1,17 +1,4 @@
-//  let navbar = document.querySelector('.navbar');
 
-// // document.querySelector('#menu-btn').onclick = () =>{
-// // 	navbar.classList.toggle('active');
-// // 	searchform.classList.remove('active');
-// // 	cartItem.classList.remove('active');
-// // }
-
-// let searchform = document.querySelector('.search-box');
-
-// document.querySelector('#search-btn').onclick = () =>{
-// 	searchform.classList.toggle('active');
-	
-// 	} 
 const images = "https://image.tmdb.org/t/p/w1280"
 
 const api2 = "http://www.omdbapi.com/?i=tt3896198&apikey=e792e51d"
@@ -42,7 +29,7 @@ const showmovies = (data) => {
 			<i class="fas fa-star fa-sm" id="rating"><h4>${item.vote_average}</h4></i>
 		</div>
 		<p class="resln">480p | 720p | 1080p </p>
-        <button onclick=  class="learn-btn">Learn More</button>
+        <button class="learn-btn">Learn More</button>
 		<button class="fas fa-download fa-sm" id="download"></button>
 		`
 		;
@@ -50,11 +37,7 @@ const showmovies = (data) => {
 	});
 }
 
-// const getmovies2 = async(api) => {
-// 	const response2 = await fetch (api)
-// 	const data2 = await response2.json()
-// 	console.log(data2)
-// }
+
 
 document.querySelector("#search-box").addEventListener(
 	"keyup", function(event){
@@ -71,4 +54,4 @@ document.querySelector("#search-box").addEventListener(
 
 
 getmovies(api)
-// getmovies2(api2)
+
